@@ -75,5 +75,27 @@ p{
   border-left: 1px solid gray;
 }
 #b9{
-  bor
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+}
+#reset{
+  box-sizing: border-box;
+  width: 95px;
+  height: 40px;
+  border:1px solid dodgerblue;
+  margin-left: auto;
+  border-radius: 8px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color:white ;
+  color:dodgerblue;
+  font-size: 20px;
+  cursor: pointer;
+}
+#reset-container{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:aliceblue;
+  font-size: 20px;
+}
+#header{
+  text-align: center;
 }
