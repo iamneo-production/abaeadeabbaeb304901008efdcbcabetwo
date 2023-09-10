@@ -213,5 +213,15 @@ function myfunc(){
         b5btn.style.color='red';
         b6btn.style.color='red';
     }
-    else if((b1=='X'||b1=='O')&&(b2=='X'||b2=='O'))
+    else if((b1=='X'||b1=='O')&&(b2=='X'||b2=='O')&&(b3=='X'|| b3=='O')&&(b4=='X'||b4=='O')&&(b5=='X'||b5=='O')&&(b6=='X'|| b6=='O')&&(b7=='X'||b7=='O')&&(b8=='X'||b8=='O')&&(b9=='X'|| b9=='O')){
+        document.getElementById('result-container').innerHTML='Match Tie';
+    }
+    else{
+        if(flag==1){
+            document.getElementById('result-container').innerHTML="Player X Turn";
+        }
+        else{
+            document.getElementById('result-container').innerHTML=
+        }
+    }
 }
