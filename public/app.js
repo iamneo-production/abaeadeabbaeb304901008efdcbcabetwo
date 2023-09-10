@@ -10,5 +10,28 @@ function myfunc(){
     b8=document.getElementById('b8').value;
     b9=document.getElementById('b9').value;
 
-    varb1btn,b2btn,b3btn,b4btn,
+    varb1btn,b2btn,b3btn,b4btn,b5btn,b6btn,b7btn,b8btn,b9bt;
+    b1btn=document.getElementById('b1');
+    b2btn=document.getElementById('b2');
+    b3btn=document.getElementById('b3');
+    b4btn=document.getElementById('b4');
+    b5btn=document.getElementById('b5');
+    b6btn=document.getElementById('b6');
+    b7btn=document.getElementById('b7');
+    b8btn=document.getElementById('b8');
+    b9btn=document.getElementById('b9');
+
+    if((b1=='x' ||b1=='X')&& (b2=='x' || b2=='X') && (b3=='x' || b3=='X')){
+        document.getElementById('result-container').innerHTML='Player X won';
+        b4btn.disabled=true;
+        b5btn.disabled=true;
+        b6btn.disabled=true;
+        b7btn.disabled=true;
+        b8btn.disabled=true;
+        b9btn.disabled=true;
+        b1btn.style.color='red';
+        b2btn.style.color='red';
+        b3btn.style.color='red';
+    }
+    else if ()
 }
