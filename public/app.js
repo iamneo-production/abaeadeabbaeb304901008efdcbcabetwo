@@ -117,7 +117,7 @@ function myfunc(){
         b5btn.style.color='red';
         b6btn.style.color='red';
     }
-    else if((b1=='o' ||b2=='O')&& (b2=='o' || b2=='O') && (b3=='o' || b3=='O')){
+    else if((b1=='o' ||b1=='O')&& (b2=='o' || b2=='O') && (b3=='o' || b3=='O')){
         document.getElementById('result-container').innerHTML='Player O won';
         b4btn.disabled=true;
         b5btn.disabled=true;
@@ -129,7 +129,7 @@ function myfunc(){
         b2btn.style.color='red';
         b3btn.style.color='red';
     }
-    else if((b1=='o' ||b2=='O')&& (b4=='o' || b4=='O') && (b7=='o' || b7=='O')){
+    else if((b1=='o' ||b1=='O')&& (b4=='o' || b4=='O') && (b7=='o' || b7=='O')){
         document.getElementById('result-container').innerHTML='Player O won';
         b2btn.disabled=true;
         b3btn.disabled=true;
@@ -165,7 +165,7 @@ function myfunc(){
         b6btn.style.color='red';
         b9btn.style.color='red';
     }
-    else if((b1=='o' ||b2=='O')&& (b5=='o' || b5=='O') && (b9=='o' || b9=='O')){
+    else if((b1=='o' ||b1=='O')&& (b5=='o' || b5=='O') && (b9=='o' || b9=='O')){
         document.getElementById('result-container').innerHTML='Player O won';
         b2btn.disabled=true;
         b3btn.disabled=true;
@@ -177,16 +177,41 @@ function myfunc(){
         b5btn.style.color='red';
         b9btn.style.color='red';
     }
-    else if((b1=='o' ||b2=='O')&& (b2=='o' || b2=='O') && (b3=='o' || b3=='O')){
+    else if((b3=='o' ||b3=='O')&& (b5=='o' || b5=='O') && (b7=='o' || b7=='O')){
         document.getElementById('result-container').innerHTML='Player O won';
+        b1btn.disabled=true;
+        b2btn.disabled=true;
         b4btn.disabled=true;
-        b5btn.disabled=true;
         b6btn.disabled=true;
+        b8btn.disabled=true;
+        b9btn.disabled=true;
+        b3btn.style.color='red';
+        b5btn.style.color='red';
+        b7btn.style.color='red';
+    }
+    else if((b2=='o' ||b2=='O')&& (b5=='o' || b5=='O') && (b8=='o' || b8=='O')){
+        document.getElementById('result-container').innerHTML='Player O won';
+        b1btn.disabled=true;
+        b3btn.disabled=true;
+        b4btn.disabled=true;
+        b6btn.disabled=true;
+        b7btn.disabled=true;
+        b9btn.disabled=true;
+        b2btn.style.color='red';
+        b5btn.style.color='red';
+        b8btn.style.color='red';
+    }
+    else if((b4=='o' ||b4=='O')&& (b5=='o' || b5=='O') && (b6=='o' || b6=='O')){
+        document.getElementById('result-container').innerHTML='Player O won';
+        b1btn.disabled=true;
+        b2btn.disabled=true;
+        b3btn.disabled=true;
         b7btn.disabled=true;
         b8btn.disabled=true;
         b9btn.disabled=true;
-        b1btn.style.color='red';
-        b2btn.style.color='red';
-        b3btn.style.color='red';
+        b4btn.style.color='red';
+        b5btn.style.color='red';
+        b6btn.style.color='red';
     }
+    else if((b1=='X'||b1=='O')&&(b2=='X'||b2=='O'))
 }
