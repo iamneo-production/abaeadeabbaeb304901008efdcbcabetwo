@@ -316,15 +316,28 @@ function myfunc_9(){
 
     }
 }
-function myfunc_3(){
+function myfunc_10(){
     if(flag==1){
-        document.getElementById("b1").value="X";
-        document.getElementById("b1").disabled=true;
+        document.getElementById("b8").value="X";
+        document.getElementById("b8").disabled=true;
         flag=0;
     }
     else{
-        document.getElementById("b1").value="O";
-        document.getElementById("b1").disabled=true;
+        document.getElementById("b8").value="O";
+        document.getElementById("b8").disabled=true;
+        flag=1;
+
+    }
+}
+function myfunc_11(){
+    if(flag==1){
+        document.getElementById("b9").value="X";
+        document.getElementById("b9").disabled=true;
+        flag=0;
+    }
+    else{
+        document.getElementById("b9").value="O";
+        document.getElementById("b9").disabled=true;
         flag=1;
 
     }
