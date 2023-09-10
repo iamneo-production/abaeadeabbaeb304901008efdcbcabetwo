@@ -41,9 +41,11 @@ const ticTacToe = (element, index) => {
 
         }else{
             currentPlayer=currentPlayer==='X' ? 'O' :'X';
+            result.textContent='Player ${currentPlayer} turn'; 
         }
     }
     // Your game logic here
+};
 
     /*
     **Part 1: Winning Conditions (Add your code here)**
@@ -61,7 +63,6 @@ const ticTacToe = (element, index) => {
 
     // Your code to handle button and cell interactions
     // ...
-};
 
     /*
     **Part 2: Reset Function (Add your code here)**
@@ -74,6 +75,13 @@ const ticTacToe = (element, index) => {
 
 // Function to reset the game
 const resetGame = () => {
+    cells=[' ',' ',' ',' ',' ',' ',' ',' ',' '];
+    currentPlayer='X';
+    result.textContent=' ';
+    btns.forEach(btn=>{
+        btn.textContent='';
+        btns.disabled=false;
+    });
     // Your code to reset the game state
     // ...
 
