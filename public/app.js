@@ -92,8 +92,8 @@ const resetGame = () => {
     // ...
 };
 
-btns.forEach((btn, i) => {
-    btn.addEventListener('click', () => ticTacToe(btn, i));
+btns.forEach((btn, index) => {
+    btn.addEventListener('click', () => ticTacToe(btn, index));
 });
 
-document.querySelector('#reset').addEventListener('click', resetGame);
+document.querySelector('#resetButton').addEventListener('click', resetGame);
