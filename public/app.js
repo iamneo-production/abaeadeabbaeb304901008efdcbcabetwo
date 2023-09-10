@@ -17,11 +17,32 @@ let conditions = [
 const checkWin=()=>{
     for(let condition of conditions ){
         const[a,b,c]=condition;
-        if(cells[a]===currentPlayer && cells[b]===currentPlayer && cells[c]===curren)
+        if(cells[a]===currentPlayer && cells[b]===currentPlayer && cells[c]===currentPlayer){
+            return true;
+        }
     }
-}
+    return false;
+};
+const checkDraw=()=>{
+    return cells.every(cell=>cell !==' ');
+
+};
 // Function to handle player moves
 const ticTacToe = (element, index) => {
+    if(cells[index]===' ' && !checkWin() && !checkDraw()){
+        cells[index]=currentPlayer;
+        element.textContent=currentPlayer;
+        if(checkWin()){
+            result.textContent='Player ${CurrentPlayer} wins';
+            btns.forEach(btn=>btn.disabled=true);
+        }
+        else if(checkDraw()){
+            result.textContent='its an draw';
+
+        }else{
+            currentPlayer=currentPlayer==='X' ? 'O' :'X';
+        }
+    }
     // Your game logic here
 
     /*
